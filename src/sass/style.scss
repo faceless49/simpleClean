@@ -1,0 +1,17 @@
+@import 'libs/bootstrap.min';
+@import 'libs/fonts';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'libs/iconfonts';
+
+
+* {
+    font-family: 'Quiksand', sans-serif;
+    font-weight: 500;
+}
+/* html, body {
+    
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+  } */
