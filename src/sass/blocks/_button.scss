@@ -1,0 +1,9 @@
+.btn {
+padding: 13px 15px;
+font-style: normal;
+font-weight: 700;
+font-size: 1.3rem;
+line-height: 16px;
+@include flexcenter;
+color: #3A79FF;
+}

@@ -1,0 +1,16 @@
+.hero {
+    background-color: #D8E0F7;
+  &__content {
+      padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn {
+    height: 52px;
+    width: 52px;
+    background-color: #fff;
+    border-radius: 100%
+  }
+}

@@ -1,0 +1,19 @@
+.planning {
+    background-color: #F5F8FF;
+    background: url('../img/planning/illustration.png') right -100% no-repeat;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 210px 0;
+    }
+    &__btn {
+        color: #fff;
+        background-color: #4C85FF;
+        &--transparent {
+            color: #ADB4D2;
+            border-color: #D1D1E4;
+        }
+    }
+}
