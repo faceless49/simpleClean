@@ -1,0 +1,41 @@
+.about {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin: 20px auto 90px auto;
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  &__label {
+    font-size: 1rem;
+  }
+  &__icon-wrapper {
+    @include flexcenter;
+    width: 69px;
+    height: 69px;
+    border-radius: 100%;
+    background-color: #f1f5ff;
+  }
+  &__subtitle {
+    font-family: 'OpenSans-SemiBold';
+      margin: 35px auto 25px auto;
+      color: #4074F8;
+  }
+  &__btn {
+    display: inline-block;
+    background-color: $mainbg-btn;
+    &--red {
+    display: inline-block;
+
+        background-color: #FFD7D7;
+        color: #D43F3F;
+    }
+  }
+  &__form {
+      @include flexcenter;
+      margin-top: 90px;
+  }
+}

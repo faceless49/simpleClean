@@ -3,3 +3,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: $base-color;
+}

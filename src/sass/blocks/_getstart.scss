@@ -1,0 +1,16 @@
+.getstart {
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    color: #fff;
+
+    &__label {
+        color: #fff;
+    }
+    &__title {
+        font-weight: 300;
+        color: #fff;
+    }
+    &__descr {
+        @include text;
+        color: #fff;
+    }
+}

@@ -1,13 +1,21 @@
 .hero {
     background-color: #D8E0F7;
+    padding-top: 90px;
+
+  &_title {
+    margin-top: 15px;
+  }
+  &__descr {
+    margin-top: 25px;
+  }
   &__content {
-      padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   &__btn {
+    margin-top: 20px;
     height: 52px;
     width: 52px;
     background-color: #fff;

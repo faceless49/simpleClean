@@ -6,7 +6,7 @@
 
 
 * {
-    font-family: 'Quiksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 500;
 }
 html, body {
@@ -21,5 +21,11 @@ html, body {
 @import 'blocks/descr';
 @import 'blocks/brands';
 @import 'blocks/planning';
+@import 'blocks/about';
+@import 'blocks/blog';
+@import 'blocks/faq';
+@import 'blocks/getstart';
+@import 'blocks/newsletter';
+@import 'blocks/stats';
 
 

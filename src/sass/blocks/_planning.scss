@@ -15,5 +15,15 @@
             color: #ADB4D2;
             border-color: #D1D1E4;
         }
+        &-group {
+        margin-top: 45px;
+
+        }
+    }
+    &__title {
+        margin: 25px 0;
+    }
+    &__descr {
+        margin: 0;
     }
 }

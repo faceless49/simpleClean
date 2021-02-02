@@ -1,0 +1,60 @@
+.blog {
+    background-color: #F5F8FF;
+    &__label {
+        margin-top: 100px;
+    }
+    &__title {
+        font-weight: 500;
+        margin-top: 20px;
+        font-size: 2.4rem;
+    }
+    &__btn {
+        display: inline-block;
+        background-color: $mainbg-btn;
+        &--transparent {
+            background-color: transparent;
+            border: none;
+            color: #A6B6DA;
+        }
+    }
+    &__form {
+        @include flexcenter;
+        justify-content: flex-start;
+    }
+    &__title-slider {
+        font-size: 3.6rem;
+        font-weight: 400;
+        color: $second-color;
+    }
+    &__descr-slider {
+        font-family: 'Roboto';
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    &__carousel-inner {
+        margin-top: 90px;
+        padding: 65px 35px;
+        background-color: #fff;
+    }
+    &__images-wrapper {
+        display: flex;
+        &--small {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__carousel-item {
+        display: flex;
+    }
+   
+}
+
+
+
+
+.carousel-indicators > li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D1D6E3;
+  }
