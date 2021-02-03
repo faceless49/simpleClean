@@ -30,17 +30,20 @@
         font-family: 'Roboto';
         font-size: 1.4rem;
         font-weight: 400;
+        line-height: 27px;
     }
     &__carousel-inner {
         margin-top: 90px;
-        padding: 65px 35px;
-        background-color: #fff;
+        padding: 65px 0 65px 0;
+        background-color: #ffffff;
     }
     &__images-wrapper {
         display: flex;
         &--small {
             display: flex;
             flex-direction: column;
+            margin-left: 12px;
+            justify-content: space-between;
         }
     }
     &__carousel-item {
@@ -52,9 +55,3 @@
 
 
 
-.carousel-indicators > li {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #D1D6E3;
-  }

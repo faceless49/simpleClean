@@ -1,16 +1,28 @@
 .getstart {
     background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
     color: #fff;
-
+    padding: 90px;
     &__label {
         color: #fff;
     }
     &__title {
         font-weight: 300;
         color: #fff;
+        margin-top: 15px;
     }
     &__descr {
         @include text;
         color: #fff;
+        font-weight: 400;
+        margin: 28px auto;
+    }
+    &__btn {
+        background-color: #fff;
+        color: $second-color;
+        &--transparent {
+            background-color: transparent;
+            color: #C7D3FF;
+            border-color: #C7D3FF;
+        }
     }
 }

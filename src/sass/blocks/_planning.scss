@@ -1,6 +1,7 @@
 .planning {
     background-color: #F5F8FF;
-    background: url('../img/planning/illustration.png') right -100% no-repeat;
+    background: url('../img/planning/illustration.png') no-repeat;
+    background-position: right center;
     &__content {
         display: flex;
         justify-content: center;
@@ -24,6 +25,7 @@
         margin: 25px 0;
     }
     &__descr {
+        padding-right: 170px;
         margin: 0;
     }
 }

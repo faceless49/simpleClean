@@ -1,4 +1,5 @@
 .about {
+  padding: 150px 120px;
   &__block {
     display: flex;
     flex-direction: column;
@@ -26,16 +27,38 @@
   }
   &__btn {
     display: inline-block;
+    position: relative;
     background-color: $mainbg-btn;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 2px;
+      background-color: #DAE4FE;
+      top: 50%;
+      right: 120px;
+    }
     &--red {
     display: inline-block;
-
-        background-color: #FFD7D7;
-        color: #D43F3F;
+    position: relative;
+    background-color: #FFD7D7;
+    color: #D43F3F;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 2px;
+          background-color: #DAE4FE;
+          top: 50%;
+          left: 120px;
+        }
     }
   }
   &__form {
       @include flexcenter;
       margin-top: 90px;
+  }
+  &__or {
+    margin: auto 50px;
   }
 }
