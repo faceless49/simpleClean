@@ -1,17 +1,78 @@
 .quotes {
-    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
-    padding: 109px 0;
-    &__content {
-        padding: 0;
+  background: linear-gradient(180deg, #eaf0ff 0%, #f6f9ff 100%);
+  padding: 109px 0;
+  &__content {
+    padding: 0;
+  }
+  &__title {
+    font-weight: 500;
+    margin: 31px 0 15px 0;
+  }
+  &__descr {
+    font-family: "OpenSans-SemiBold";
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 23px;
+  }
+  &__carousel-inner {
+    background-color: #fff;
+    overflow: visible;
+    width: 1000px;
+  }
+  &__carousel-indicators {
+      bottom: -90px;
+  }
+  &__carousel-item {
+    position: relative;
+    padding: 45px 70px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 24px;
+    color: #676f95;
+    box-shadow: 0px 5px 50px #F3F5FA;
+    border: 1px solid #D8E3FE;
+    width: 400px;
+
+
+    &--ivan {
+      &:after {
+        content: "";
+        width: 62px;
+        height: 62px;
+        background-image: url(../img/quotes/boy.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
-    &__title {
-        font-weight: 500;
-        margin: 31px 0 15px 0;
+    &--alisa {
+        &:after {
+        content: "";
+        width: 409px;
+        height: 307px;
+        background-image: url(../img/quotes/bussinessboy.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+    }  
+    &--larisa {
+        &:after{
+        content: "";
+        width: 62px;
+        height: 62px;
+        background-image: url(../img/quotes/womanalisa.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -20%;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    &__descr {
-        font-family: 'OpenSans-SemiBold';
-        font-size: 1.2rem;
-        font-weight: 600;
-        line-height: 23px;
-    }
+    }  
+  }
 }

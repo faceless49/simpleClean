@@ -1,7 +1,10 @@
 .getstart {
-    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
     color: #fff;
     padding: 90px;
+    background-image: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%), url(../img/getstart/left.svg), url(../img/getstart/right.svg);
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+    background-position: 100% 100%, 0% 50%;
     &__label {
         color: #fff;
     }

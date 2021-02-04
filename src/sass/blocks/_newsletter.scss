@@ -1,14 +1,16 @@
 .newsletter {
+    padding: 118px 0;
     &__title {
+        margin-bottom: 18px;
         font-family: Quicksand;
 font-style: normal;
 font-weight: 700;
 font-size: 1.8rem;
 line-height: 22px;
-text-align: center;
+text-align: left;
 color: $second-color;
     }
-    &__form {
+    &__form-inline {
         display: flex;
 
     }

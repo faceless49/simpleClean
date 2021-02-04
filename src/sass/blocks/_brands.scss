@@ -6,10 +6,10 @@
         align-items: center;
     }
     &__icon {
-        color: red;
+        &:hover {
+            transition: all 0.3s;
+            fill: #5982E7;
+        }
     }
 }
 
-svg > path:hover {
-    fill: red;
-}

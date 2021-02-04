@@ -1,4 +1,8 @@
 .about {
+  background: url(../img/about/clouds.svg),
+    url(../img/about/minicloud.svg);
+  background-position: 0% 50%, 100% 20%;
+  background-repeat: no-repeat;
   padding: 150px 120px;
   &__block {
     display: flex;
@@ -21,42 +25,42 @@
     background-color: #f1f5ff;
   }
   &__subtitle {
-    font-family: 'OpenSans-SemiBold';
-      margin: 35px auto 25px auto;
-      color: #4074F8;
+    font-family: "OpenSans-SemiBold";
+    margin: 35px auto 25px auto;
+    color: #4074f8;
   }
   &__btn {
     display: inline-block;
     position: relative;
     background-color: $mainbg-btn;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 15px;
       height: 2px;
-      background-color: #DAE4FE;
+      background-color: #dae4fe;
       top: 50%;
       right: 120px;
     }
     &--red {
-    display: inline-block;
-    position: relative;
-    background-color: #FFD7D7;
-    color: #D43F3F;
-        &:after {
-          content: '';
-          position: absolute;
-          width: 15px;
-          height: 2px;
-          background-color: #DAE4FE;
-          top: 50%;
-          left: 120px;
-        }
+      display: inline-block;
+      position: relative;
+      background-color: #ffd7d7;
+      color: #d43f3f;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background-color: #dae4fe;
+        top: 50%;
+        left: 120px;
+      }
     }
   }
   &__form {
-      @include flexcenter;
-      margin-top: 90px;
+    @include flexcenter;
+    margin-top: 90px;
   }
   &__or {
     margin: auto 50px;
