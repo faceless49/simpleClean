@@ -10,8 +10,14 @@ line-height: 22px;
 text-align: left;
 color: $second-color;
     }
-    &__form-inline {
-        display: flex;
-
+    &__form {
+        height: 50px;
+    }
+    &__btn {
+        margin-left: 5px;
+        padding: 13px 43px;
+    }
+    &__input {
+        width: 70% !important;
     }
 }

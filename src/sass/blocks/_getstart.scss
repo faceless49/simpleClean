@@ -22,10 +22,15 @@
     &__btn {
         background-color: #fff;
         color: $second-color;
+        box-shadow: 0px 5px 15px #6480E8;
+border-radius: 2px;
         &--transparent {
             background-color: transparent;
             color: #C7D3FF;
             border-color: #C7D3FF;
+            padding: 10px 15px;
+            border: 1px solid #A0B4FF;
+            border-radius: 2px;
         }
     }
 }

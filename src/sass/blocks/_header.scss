@@ -1,11 +1,19 @@
+.header {
+    padding: 33px 117px;
+
+}
+
 .navigation {
     display: flex;
-    padding: 33px 117px;
+    &__left-block {
+    display: flex;
+    }
     &__logo-btn {
         width: 26px;
         height: 26px;
         background-color: #5E81FE;
         border-radius: 100%;
+        margin-right: 65px;
     }
     &__nav-link {
     font-size: 1.2rem;
