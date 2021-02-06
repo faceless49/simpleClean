@@ -46,8 +46,14 @@
         }
     }
     &__carousel-item {
-        display: flex;
-            padding: 65px 35px 65px 45px;
+        max-height: 960px;
+        padding: 65px 35px 65px 45px;
+    }
+    &__prev {
+        left: -200px !important;
+    }
+    &__next {
+        right: -200px !important;
     }
    
 }
