@@ -51,8 +51,11 @@
     }
     &__prev {
         left: -200px !important;
+        z-index: 99999999 !important;
     }
     &__next {
+        z-index: 99999999 !important;
+
         right: -200px !important;
     }
    

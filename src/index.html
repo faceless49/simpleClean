@@ -253,16 +253,13 @@
 
     <div class="row col-md-10 offset-md-1">
       <div class="container">
-        <div id="blog__carousel-indicator" class="blog__carousel carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#blog__carousel-indicator" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#blog__carousel-indicator" data-bs-slide-to="1"></li>
-            <li data-bs-target="#blog__carousel-indicator" data-bs-slide-to="2"></li>
+        <div id="blog__carousel-indicator" class="blog__carousel carousel slide" data-ride="carousel"">
+          <ol class=" carousel-indicators">
+          <li data-target="#blog__carousel-indicator" data-slide-to="0" class="active"></li>
+          <li data-target="#blog__carousel-indicator" data-slide-to="1"></li>
+          <li data-target="#blog__carousel-indicator" data-slide-to="2"></li>
           </ol>
-
-
           <div class="blog__carousel-inner carousel-inner ">
-            <!-- * first slide -->
             <div class="blog__carousel-item carousel-item active">
               <div class="container px-0">
                 <div class="row justify-content-center">
@@ -287,9 +284,9 @@
                 </div>
               </div>
             </div>
+            <!-- * second slide -->
 
             <div class="blog__carousel-item carousel-item">
-              <!-- * second slide -->
               <div class="container px-0">
                 <div class="row justify-content-center">
                   <div class="blog__images-wrapper col-md-6">
@@ -309,9 +306,9 @@
                 </div>
               </div>
             </div>
+            <!-- * third slide -->
 
             <div class="blog__carousel-item carousel-item">
-              <!-- * third slide -->
               <div class="container px-0">
                 <div class="row justify-content-center">
                   <div class="blog__images-wrapper col-md-6">
@@ -333,24 +330,27 @@
             </div>
 
 
+
           </div>
           <a class="blog__prev carousel-control-prev" href="#blog__carousel-indicator" role="button"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="blog__next carousel-control-next" href="#blog__carousel-indicator" role="button"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
+          data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="blog__next carousel-control-next" href="#blog__carousel-indicator" role="button"
+          data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
         </div>
       </div>
     </div>
     </div>
-
-
+    </div>
   </section>
+
+
+
 
   <section class="quotes">
     <div class="container">
@@ -362,25 +362,25 @@
             Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.
           </div>
         </div>
-        <div id="carouselIndicators" class="quotes__carousel carousel slide col-md-5 offset-md-1"
-          data-bs-ride="carousel">
+        <div id="quotes__carouselIndicators" class="quotes__carousel carousel slide col-md-5 offset-md-1"
+          data-ride="carousel">
           <ol class="quotes__carousel-indicators carousel-indicators">
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="0"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="1" class="active"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="2"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="3"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="4"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="5"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="6"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="7"></li>
-            <li data-bs-target="#carouselIndicators" data-bs-slide-to="8"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="1"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="2"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="3"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="4"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="5"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="6"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="7"></li>
+            <li data-target="#quotes__carousel-indicators" data-slide-to="8"></li>
           </ol>
           <div class="quotes__carousel-inner carousel-inner">
-            <div class="quotes__carousel-item quotes__carousel-item--ivan carousel-item">
+            <div class="quotes__carousel-item quotes__carousel-item--ivan carousel-item active">
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
               an, in mel diceret persecuti.
             </div>
-            <div class="quotes__carousel-item quotes__carousel-item--alisa carousel-item  active">
+            <div class="quotes__carousel-item quotes__carousel-item--alisa carousel-item">
               Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius
               an, in mel diceret persecuti.
             </div>
@@ -438,14 +438,14 @@
         <div class="card faq__card">
           <div class="card-header faq__card-header" id="headingOne">
             <h5 class="mb-0 faq__card-title">
-              <button class="btn btn-link faq__card-btn" type="button" data-toggle="collapse"
+              <button class="btn btn-link faq__card-btn collapsed" type="button" data-toggle="collapse"
                 data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               </button>
               <span class="faq__card-title-text">Reque insolens in vel?</span>
             </h5>
           </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="faq__card-body">
               <p class="faq__card-text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.
                 Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</p>
@@ -603,11 +603,11 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
   <script src="https://kit.fontawesome.com/cb9abaadab.js" crossorigin="anonymous"></script>
 </body>
 
