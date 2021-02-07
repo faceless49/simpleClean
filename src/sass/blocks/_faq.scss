@@ -4,6 +4,8 @@
     &__title {
         margin-top: 20px;
     font-size: 2.4rem;
+    
+font-weight: 500;
     }
     &__card {
         border: none !important;
@@ -48,8 +50,9 @@
     }
     
     &__card-text {
-        font-family: "RobotoRegular", sans-serif;
-        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
         letter-spacing: 0.5px;
         color: #8D96BD;
         line-height: 1.9;
@@ -60,8 +63,9 @@
         height: 42px;
         min-width: 195px;
         background-color: #E8ECF4;
-        font-family: "QuicksandMedium", sans-serif;
-        font-size: 13px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        font-size: 1.3rem;
         color: #7382A3;
         border: none;
         margin-top: 5px;
