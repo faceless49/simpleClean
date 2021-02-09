@@ -1,78 +1,81 @@
 .faq {
-    padding: 175px 0;
-    background-color: #fff;
-    &__title {
-        margin-top: 20px;
+  padding: 175px 0;
+  background-color: #fff;
+  &__title {
+    margin-top: 20px;
     font-size: 2.4rem;
-    
-font-weight: 500;
-    }
-    &__card {
-        border: none !important;
-        border-bottom: 1px solid #D8E3FE !important;
-    }
-    &__card-header {
-        background-color: transparent;
-        padding: 17px 17px 15px;
-        border: none !important;
-    }
-    &__card-title {
-        height: 4.5rem;
-        display: flex;
-        align-items: center;
-        font-family: 'Quicksand';
-        font-weight: 700;
-        color: #495274;
-        font-size: 1.5rem;
-        letter-spacing: .5px;
-    }
-    &__card-btn {
-        height: 12px;
-        width: 20px;
-        background-image: url(../img/faq/arrow-open.svg);
-        background-repeat: no-repeat;
-        margin-right: 24px;
-    }
-    &__card-btn.collapsed {
-        background-image: url(../img/faq/arrow.svg);
-        background-repeat: no-repeat;
-    }
-    &__card-btn.collapsed + .help__card-title-text {
-        color: #8E96B7;
-        font-family: 'Quicksand';
-        font-weight: 500;
-    }
-    &__card-body {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 16px 10px 50px 72px;
-    }
-    
-    &__card-text {
-        font-family: "Roboto", sans-serif;
-        font-size: 1.4rem;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        color: #8D96BD;
-        line-height: 1.9;
-        margin-right: 60px;
-    }
-    
-    &__card-body-btn {
-        height: 42px;
-        min-width: 195px;
-        background-color: #E8ECF4;
-        font-family: "Quicksand", sans-serif;
-        font-weight: 500;
-        font-size: 1.3rem;
-        color: #7382A3;
-        border: none;
-        margin-top: 5px;
-        border-radius: 2px;
-    }
-    
-    &__card-body-btn:focus {
-        outline: 1px solid transparent;
-    }
+    font-weight: 500;
+  }
+  &__accordion {
+      margin-top: 70px;
+  }
+  &__card {
+    border: none !important;
+    border-bottom: 1px solid #d8e3fe !important;
+  }
+  &__card-header {
+    background-color: transparent;
+    padding: 17px 17px 15px;
+    border: none !important;
+  }
+  &__card-title {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    font-family: "Quicksand";
+    font-weight: 700;
+    color: #495274;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+  &__card-btn {
+    height: 12px;
+    width: 20px;
+    background-image: url(../img/faq/arrow-open.svg);
+    background-repeat: no-repeat;
+    margin-right: 24px;
+    padding: 5px 10px !important;
+  }
+  &__card-btn.collapsed {
+    background-image: url(../img/faq/arrow.svg);
+    background-repeat: no-repeat;
+  }
+  &__card-btn.collapsed + .help__card-title-text {
+    color: #8e96b7;
+    font-family: "Quicksand";
+    font-weight: 500;
+  }
+  &__card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 10px 50px 72px;
+  }
+
+  &__card-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #8d96bd;
+    line-height: 1.9;
+    margin-right: 60px;
+  }
+
+  &__card-body-btn {
+    height: 42px;
+    min-width: 195px;
+    background-color: #e8ecf4;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #7382a3;
+    border: none;
+    margin-top: 5px;
+    border-radius: 2px;
+  }
+
+  &__card-body-btn:focus {
+    outline: 1px solid transparent;
+  }
 }

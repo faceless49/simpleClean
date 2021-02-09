@@ -16,11 +16,7 @@
   }
   &__carousel-inner {
     background-color: #fff;
-    overflow: visible;
     width: 1000px;
-  }
-  &__carousel-indicators {
-      bottom: -90px;
   }
   &__carousel-item {
     position: relative;
@@ -33,8 +29,6 @@
     box-shadow: 0px 5px 50px #F3F5FA;
     border: 1px solid #D8E3FE;
     width: 400px;
-
-
     &--ivan {
       &:after {
         content: "";

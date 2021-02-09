@@ -17,6 +17,11 @@
   &__label {
     font-size: 1rem;
   }
+  &__block-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
   &__icon-wrapper {
     @include flexcenter;
     width: 69px;
@@ -33,14 +38,18 @@
     display: inline-block;
     position: relative;
     background-color: $mainbg-btn;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 2px;
-      background-color: #dae4fe;
-      top: 50%;
-      right: 120px;
+    &--blue {
+      position: relative;
+      
+      &:before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background-color: #dae4fe;
+        top: 50%;
+        right: 120px;
+    }
     }
     &--red {
       display: inline-block;

@@ -1,10 +1,6 @@
 .brands {
-    &__content {
-        padding: 60px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    padding: 60px 0;
+
     &__icon {
         &:hover {
             transition: all 0.3s;

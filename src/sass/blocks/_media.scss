@@ -1,0 +1,292 @@
+@media (max-width: 1200px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+  .planning {
+    padding: 0px 20px;
+    background-position: 125% 275%;
+  }
+  .blog {
+    &__prev {
+      left: -100px !important;
+    }
+    &__next {
+      right: -100px !important;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 30px 15px;
+  }
+  .navigation {
+    &__minlogo {
+      margin-right: 15px;
+    }
+  }
+  .faq {
+    &__card-body-btn {
+      min-width: 140px;
+    }
+  }
+  .newsletter {
+    &__btn {
+      padding: 16px 15px;
+    }
+  }
+  .footer {
+    padding: 30px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation {
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-direction: column-reverse;
+    &__logo-btn {
+      display: none;
+    }
+    &__nav {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      flex-direction: column-reverse !important;
+      justify-content: center !important;
+      align-items: center;
+      width: 50% !important;
+      z-index: 999999999999;
+      transition: 0.6s;
+      background: linear-gradient(
+        to bottom,
+        rgba(245, 246, 246, 1) 0%,
+        rgba(219, 220, 226, 1) 21%,
+        rgba(196, 200, 211, 1) 39%,
+        rgba(196, 200, 211, 1) 66%,
+        rgba(221, 223, 227, 1) 80%,
+        rgba(245, 246, 246, 1) 100%
+      );
+      &--active {
+        left: 0;
+      }
+      &-link {
+        font-size: 2rem;
+        padding: 2.5rem 1rem !important;
+        position: relative;
+        &:hover {
+          transform: scale(1.7);
+          transition: 0.4s;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: #ff497c;
+          transition: transform 0.5s; /* @FIXME: Why not working hover:before pseudoEl */
+          transform-origin: right;
+          transform: scaleX(0);
+          z-index: -1;
+          &:hover {
+            transition: transform 0.5s;
+            transform-origin: left;
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+    &__socials {
+      margin: 35px 0;
+      @include flexcenter;
+    }
+    &__socials-item {
+      font-size: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .header {
+    &__navigation {
+      @include flexcenter;
+
+    }
+    &__menu {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__hamburger {
+      display: block;
+      position: absolute;
+      right: 10%;
+      top: 6%;
+      width: 26px;
+      height: 12px;
+      z-index: 9999999999;
+      &-item {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $second-color;
+        margin-bottom: 5px;
+        transition: 0.5s all;
+      }
+      &--active {
+        &-item {
+          margin-bottom: -0.2rem;
+        }
+        &-item:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+        &-item:nth-child(2) {
+          display: none;
+        }
+        &-item:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+  }
+  .brands {
+    padding: 25px 0;
+
+    &__content {
+      flex-direction: column;
+    }
+    &__link {
+      margin-top: 40px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .planning {
+    &__content {
+      @include flexcenter;
+    }
+    &__descr {
+      @include flexcenter;
+      padding-right: 20px;
+    }
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  .about {
+    padding: 100px 30px;
+    background: url(../img/about/clouds.svg), url(../img/about/minicloud.svg);
+    background-position: 0% 110%, 100% 20%;
+    background-repeat: no-repeat;
+    &__subtitle {
+      margin: 15px auto;
+    }
+    &__form {
+      margin-top: 70px;
+    }
+    &__btn {
+      padding: 13px 5px;
+      &--blue {
+        &:before {
+          top: 50%;
+          right: 100px;
+        }
+      }
+      &--red {
+        &:after {
+          top: 50%;
+          left: 100px;
+        }
+      }
+    }
+  }
+  .stats {
+    &__block {
+      &--blue {
+        padding: 66px 20px 66px 0;
+      }
+      &--gray {
+        padding: 66px 0 66px 20px;
+      }
+    }
+  }
+  .quotes {
+    &__label {
+      @include flexcenter;
+    }
+    &__title {
+      @include flexcenter;
+      font-size: 3.5rem;
+    }
+    &__descr {
+      @include flexcenter;
+      padding: 10px 20px;
+    }
+  }
+  .newsletter {
+    padding: 70px 0;
+    &__title {
+      @include flexcenter;
+    }
+    &__descr {
+      @include flexcenter;
+    }
+    &__form {
+      margin-top: 25px;
+      justify-content: center !important;
+    }
+  }
+  .footer {
+    &__main {
+      justify-content: center !important;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .navigation {
+    &__socials-item {
+      margin-right: 20px;
+    }
+  }
+  .stats {
+    &__block {
+      align-items: center !important;
+      padding: 66px 20px 66px 20px;
+    }
+    &__descr {
+      text-align: center;
+    }
+  }
+  .blog {
+    &__btn {
+      padding: 5px 10px !important;
+    }
+  }
+  .faq {
+    &__card-btn {
+      margin-right: 15px;
+    }
+    &__card-text {
+      margin-right: 30px;
+    }
+    &__card-body {
+      padding: 16px 10px 50px 16px;
+    }
+  }
+  .getstart {
+    padding: 20px;
+  }
+  .newsletter {
+    padding: 50px 20px;
+  }
+  .footer {
+    &__copyright {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+}

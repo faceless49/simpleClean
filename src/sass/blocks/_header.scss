@@ -1,6 +1,8 @@
 .header {
     padding: 33px 117px;
-
+    &__hamburger {
+        display: none;
+    }
 }
 
 .navigation {
@@ -8,12 +10,16 @@
     &__left-block {
     display: flex;
     }
+    &__right-block {
+        @include flexcenter;
+        }
     &__logo-btn {
         width: 26px;
         height: 26px;
         background-color: #5E81FE;
         border-radius: 100%;
         margin-right: 65px;
+        
     }
     &__nav-link {
     font-size: 1.2rem;
