@@ -1,7 +1,8 @@
 .planning {
     background-color: #F5F8FF;
-    background: url('../img/planning/illustration.png') no-repeat;
-    background-position: 110% 370%;
+    // background: url('../img/planning/illustration.png') no-repeat;
+    // background-position: 110% 370%;
+    // background-size: 100vw;
     &__content {
         display: flex;
         justify-content: center;
@@ -27,5 +28,10 @@
     &__descr {
         padding-right: 170px;
         margin: 0;
+    }
+    &__img {
+    //    background: url('../img/planning/illustration.svg') no-repeat;
+        height: 100%;
+        
     }
 }

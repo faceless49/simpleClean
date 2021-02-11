@@ -41,7 +41,7 @@
             <a href="#" class="navigation__socials-item socials__item _icon-twitter"></a>
             <a href="#" class="navigation__socials-item socials__item _icon-medium"></a>
           </div>
-          <button class="btn navigation__btn">Get Started</button>
+          <button class="btn navigation__btn" data-toggle="modal" data-target="#myModal">Get Started</button>
 
         </div>
       </nav>
@@ -93,8 +93,8 @@
       </ol>
     </div>
     <div class="hero__svg-wrapper">
-      <svg width="1440" height="465" viewBox="0 0 1440 465" fill="none" xmlns="http://www.w3.org/2000/svg"
-        class="hero__linear">
+      <svg preserveAspectRatio="none" width="1440" height="465" viewBox="0 0 1440 465" fill="none"
+        xmlns="http://www.w3.org/2000/svg" class="hero__linear">
         <path
           d="M0 422.51C202.703 422.51 347.472 387.633 480.333 389.758C789.74 394.705 643.639 247.682 960.667 247.682C1305.86 247.682 1223.24 118 1441 118"
           stroke="#5F82FF" stroke-width="3" />
@@ -108,11 +108,56 @@
             <stop offset="1" stop-color="#6B89F8" />
           </linearGradient>
         </defs>
+
+<!--         <g>
+          <g filter="url(#filter0_d)">
+         <circle cx="22.5" cy="22.5" r="7.5" fill="white"/>
+         <circle cx="22.5" cy="22.5" r="6.5" stroke="#5E80FE" stroke-width="2"/>
+         </g>
+          <defs>
+         <filter id="filter0_d" x="0" y="0" width="45" height="45" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+         <feOffset/>
+         <feGaussianBlur stdDeviation="7.5"/>
+         <feColorMatrix type="matrix" values="0 0 0 0 0.323144 0 0 0 0 0.512664 0 0 0 0 1 0 0 0 0.25 0"/>
+         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+         </filter>
+         </defs>
+          </g> -->
       </svg>
-      <img src="img/hero/ellipse.svg" alt="" class="hero__ellipse hero__ellipse--left">
+ <!--      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+          <circle cx="22.5" cy="22.5" r="7.5" fill="white" />
+          <circle cx="22.5" cy="22.5" r="6.5" stroke="#5E80FE" stroke-width="2" />
+        </g>
+      </svg>
+      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+          <circle cx="22.5" cy="22.5" r="7.5" fill="white" />
+          <circle cx="22.5" cy="22.5" r="6.5" stroke="#5E80FE" stroke-width="2" />
+        </g>
+
+      </svg>
+      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+          <circle cx="22.5" cy="22.5" r="7.5" fill="white" />
+          <circle cx="22.5" cy="22.5" r="6.5" stroke="#5E80FE" stroke-width="2" />
+        </g>
+
+      </svg>
+      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+          <circle cx="22.5" cy="22.5" r="7.5" fill="white" />
+          <circle cx="22.5" cy="22.5" r="6.5" stroke="#5E80FE" stroke-width="2" />
+        </g>
+      </svg> -->
+
+  <img src="img/hero/ellipse.svg" alt="" class="hero__ellipse hero__ellipse--left">
       <img src="img/hero/ellipse.svg" alt="" class="hero__ellipse hero__ellipse--center">
       <img src="img/hero/ellipse.svg" alt="" class="hero__ellipse hero__ellipse--right">
-      <img src="img/hero/ellipse.svg" alt="" class="hero__ellipse hero__ellipse--secondright">
+      <img src="img/hero/ellipse.svg" alt="" class="hero__ellipse hero__ellipse--secondright"> 
     </div>
 
   </section>
@@ -574,22 +619,54 @@
     <div class="footer__copyright">
       Copyright &copy; 2018 by Random site
     </div>
-
-
-
     </div>
     </div>
     </div>
+
   </footer>
 
+  <!-- * ================ Modal ================ -->
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="avatar">
+            <img src="img/modal/avatar.png" alt="Avatar">
+          </div>
+          <h4 class="modal-title">Member Login</h4>
+          <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group d-flex modal__btn align-items-center justify-content-center">
+              <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-  <!--   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script> -->
+    </script>
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
